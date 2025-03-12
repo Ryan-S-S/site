@@ -1,3 +1,70 @@
-#Box1{
-    background-color: aqua;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd; /* Cor de fundo similar à da imagem */
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Container central */
+.container {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+/* Caixa de pesquisa */
+.search-box {
+    width: 300px;
+    height: 45px;
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Campo de input */
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+/* Botão de busca */
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Ícone de busca */
+.search-box button i {
+    pointer-events: none;
+}
+
+/* Elementos circulares decorativos */
+.circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, #aaa, transparent);
+    border-radius: 50% 50% 0 0;
 }
