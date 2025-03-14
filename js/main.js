@@ -35,3 +35,8 @@ async function listarDocumentos(colecao) {
         console.log(`ID: ${doc.id} →`, doc.data());
     });
 }
+
+window.salvar = salvarUsuario;
+window.ler = lerDados;
+window.apagar = apagarDocumento;
+window.listar = listarDocumentos;
