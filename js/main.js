@@ -1,5 +1,5 @@
 import { db } from "./firebase-config.js";
-import { doc, setDoc, getDoc, getDocs, updateDoc, deleteDoc, deleteField } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+import { doc, setDoc, getDoc, getDocs, collection, updateDoc, deleteDoc, deleteField } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
 async function salvarUsuario(id, nome, idade) {
     await setDoc(doc(db, "usuarios", id), { 
